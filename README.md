@@ -1,44 +1,36 @@
-# Unity Runtime Profiler Monitor
+# Unity Performance Profiler
 
-This is a lightweight in-game profiler display for Unity that shows real-time performance data using Unity's built-in UnityEngine.Profiler API.
+![type](https://img.shields.io/badge/type-Unity%20runtime%20profiler-blue) ![tech](https://img.shields.io/badge/tech-C%23%20%2F%20Unity-black) ![status](https://img.shields.io/badge/status-active-green)
+
+**Unity Performance Profiler** is a lightweight runtime profiler overlay for Unity that displays FPS, memory, garbage collection, draw calls, and rendered object information during development builds.
+
+Designed for Unity developers, QA testers, VR/mobile teams, and anyone who needs quick runtime performance visibility without opening the full Unity Profiler.
 
 ## Features
 
-- Real-time FPS display
-- Memory usage (allocated, reserved, Mono heap)
-- Garbage Collector info
-- Draw calls and rendered objects count
-- Simple overlay UI (left-top corner of screen)
-- Works in both 3D and VR projects
-- Only active in Developer Builds
+- Real-time FPS display in the game view.
+- Memory usage including allocated, reserved, and Mono heap data.
+- Garbage Collector information for spotting allocation problems.
+- Draw call and rendered object counters.
+- Simple overlay UI for fast debugging.
+- Designed to stay active only in development/debug workflows.
 
 ## Installation
 
-1. Add an empty GameObject to your scene.
-2. Rename it to Profiler (optional but recommended).
-3. Attach the Profiler.cs script to the object as a component.
-4. Enter Play Mode - performance stats will appear on the top-left of the screen.
+Copy `SimpleProfiler.cs` or `AdvancedVRProfiler.cs` into your Unity project and attach the script to an empty GameObject.
 
-Note: This profiler is automatically disabled in non-development builds.
+## Usage
 
-## Folder Structure
+Enter Play Mode or run a development build. The profiler overlay appears in the configured screen position and reports runtime stats.
 
-Assets/
-  Scripts/
-    SimpleProfiler.cs
-    AdvancedVRProfiler.cs
+## SEO Keywords
 
-## Use Cases
+Unity runtime profiler, Unity FPS monitor, Unity memory profiler overlay, Unity performance debugging, Unity development build profiler, Unity VR profiler
 
-- Debugging and testing game performance at runtime
-- Monitoring resource usage in VR or mobile projects
-- Quick identification of frame drops or memory spikes
-- Unity 2020.3 and above
-- Windows, Android, and VR builds (Oculus/Quest compatible)
+## GitHub Topics
 
+`unity`, `profiler`, `performance`, `fps-monitor`, `memory-management`, `csharp`, `gamedev`
 
-![Screenshot](https://github.com/user-attachments/assets/a0f00621-e766-4838-92db-5b313fc8af15)
+## Repository
 
-## License
-
-MIT License
+[View on GitHub](https://github.com/AybarsBarut/Unity-Performance-Profiler)
